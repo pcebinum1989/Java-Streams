@@ -4,8 +4,9 @@ public class Volcano {
     public String EQ;
     public String Name;
     public String Location;
-    public double Latitude;
-    public double Longitude;
+    public String Country;
+    public float Latitude;
+    public float Longitude;
     public int Elevation;
     public String Type;
     public int VEI;
@@ -14,12 +15,13 @@ public class Volcano {
 
     public Volcano(){}
 
-    public Volcano(int year, String TSU, String EQ, String name, String location, double latitude, double longitude, int elevation, String type, int VEI, String agent, int DEATHS) {
+    public Volcano(int year, String TSU, String EQ, String name, String location, String Country, float latitude, float longitude, int elevation, String type, int VEI, String agent, int DEATHS) {
         Year = year;
         this.TSU = TSU;
         this.EQ = EQ;
         Name = name;
         Location = location;
+        this.Country = Country;
         Latitude = latitude;
         Longitude = longitude;
         Elevation = elevation;
@@ -69,11 +71,19 @@ public class Volcano {
         Location = location;
     }
 
+    public String getCountry() {
+        return Country;
+    }
+
+    public void setCountry(String country) {
+        Country = country;
+    }
+
     public double getLatitude() {
         return Latitude;
     }
 
-    public void setLatitude(double latitude) {
+    public void setLatitude(float latitude) {
         Latitude = latitude;
     }
 
@@ -81,7 +91,7 @@ public class Volcano {
         return Longitude;
     }
 
-    public void setLongitude(double longitude) {
+    public void setLongitude(float longitude) {
         Longitude = longitude;
     }
 
