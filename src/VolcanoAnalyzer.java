@@ -15,7 +15,7 @@ public class VolcanoAnalyzer {
     public VolcanoAnalyzer() throws FileNotFoundException {
 
         String path = new File("").getAbsolutePath();
-        path+="\\src\\resources\\volcanoes.json";
+        path+=File.separator+"src"+File.separator+"resources"+File.separator+"volcanoes.json";
         BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
         volcanoes = new Gson().fromJson(bufferedReader, new TypeToken<ArrayList<Volcano>>() {
         }.getType());
