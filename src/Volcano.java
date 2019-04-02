@@ -1,19 +1,21 @@
 public class Volcano {
-    public int Year;
-    public String TSU;
-    public String EQ;
-    public String Name;
-    public String Location;
-    public String Country;
-    public float Latitude;
-    public float Longitude;
-    public int Elevation;
-    public String Type;
-    public int VEI;
-    public String Agent;
-    public int DEATHS;
 
-    public Volcano(){}
+    private int Year;
+    private String TSU;
+    private String EQ;
+    private String Name;
+    private String Location;
+    private String Country;
+    private float Latitude;
+    private float Longitude;
+    private int Elevation;
+    private String Type;
+    private int VEI;
+    private String Agent;
+    private int DEATHS;
+
+    public Volcano() {
+    }
 
     public Volcano(int year, String TSU, String EQ, String name, String location, String Country, float latitude, float longitude, int elevation, String type, int VEI, String agent, int DEATHS) {
         Year = year;

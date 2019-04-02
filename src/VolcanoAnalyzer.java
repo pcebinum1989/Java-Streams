@@ -13,15 +13,19 @@ public class VolcanoAnalyzer {
     public List<Volcano> volcanoes;
 
     public VolcanoAnalyzer() throws FileNotFoundException {
+
         String path = new File("").getAbsolutePath();
         path+="\\src\\resources\\volcanoes.json";
         BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
         volcanoes = new Gson().fromJson(bufferedReader, new TypeToken<ArrayList<Volcano>>() {
         }.getType());
+
     }
 
     public void displayVolcanoes(){
         volcanoes.forEach(volcano -> System.out.println(volcano.getName()));
     }
+
+
 
 }
