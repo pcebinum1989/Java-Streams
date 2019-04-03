@@ -11,21 +11,21 @@ Augment the VolcanoAnalyzer class by writing methods to answer the below questio
 `src\resources\volcanoes.json` contains a data set of 804 historical volcanic eruptions.  Below is a sample of the data for each eruption.
 
 ```JSON
-    {
-      Year: 2017,
-      TSU: "",
-      EQ: "",
-      Name: "Kilauea",
-      Location: "Hawaiian Is",
-      Country: "United States",
-      Latitude: 19.425,
-      Longitude: -155.292,
-      Elevation: 1222,
-      Type: "Shield volcano",
-      VEI: null,
-      Agent: "",
-      DEATHS: 1
-    }
+{
+    "Year": 1911,
+    "TSU": "TSU",
+    "EQ": "EQ",
+    "Name": "Taal",
+    "Location": "Luzon-Philippines",
+    "Country": "Philippines",
+    "Latitude": 14.002,
+    "Longitude": 120.993,
+    "Elevation": 400,
+    "Type": "Stratovolcano",
+    "VEI": 4,
+    "Agent": "P,W",
+    "DEATHS": 1335
+  },
 ```
 
 Use `filter`, `map`, `reduce` and any other higher-order functions to analyze the data in the following ways:
