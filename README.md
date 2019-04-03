@@ -25,7 +25,7 @@ Augment the VolcanoAnalyzer class by writing methods to answer the below questio
     "VEI": 4,
     "Agent": "P,W",
     "DEATHS": 1335
-  },
+},
 ```
 
 Use `filter`, `map`, `reduce` and any other higher-order functions to analyze the data in the following ways:
